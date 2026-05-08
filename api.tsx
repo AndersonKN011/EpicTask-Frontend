@@ -26,6 +26,7 @@ export const habitDone = async (id: number) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: id })
         });
+        return true;
     } catch (error) {
         console.error('Erro ao marcar hábito como feito:', error);
         throw error;

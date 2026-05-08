@@ -12,12 +12,12 @@ export default function Index() {
 
   const queryClient = useQueryClient();
 
-  const {data: player, refetch: refetchPlayer, isFetched: isFetchingPlayer } = useQuery({
+  const {data: player, refetch: refetchPlayer, isFetching: isFetchingPlayer } = useQuery({
     queryKey: ['player'],
     queryFn: getPlayer,
   });
 
-  const {data: habits, refetch: refetchHabits, isFetched: isFetchingHabits } = useQuery({
+  const {data: habits, refetch: refetchHabits, isFetching: isFetchingHabits } = useQuery({
     queryKey: ['habits'],
     queryFn: getHabits,
     select: (data) => {
