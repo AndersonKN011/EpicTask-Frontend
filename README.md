@@ -1,50 +1,46 @@
-# Welcome to your Expo app 👋
+# 🛡️ EpicTask Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+O EpicTask transforma uma lista de tarefas em um sistema gamificado inspirado em RPG, incentivando produtividade através de progressão, níveis e penalidades.
 
-## Get started
+---
 
-1. Install dependencies
+## 🛠️ Tecnologias e Ferramentas
 
-   ```bash
-   npm install
-   ```
+- React Native
+- Expo
+- TypeScript
+- React Query (TanStack Query)
+- TailwindCSS / NativeWind
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🎮 Funcionalidades da Interface
 
-In the output, you'll find options to open the app in a
+### 📊 Dashboard de Status
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Exibe barras dinâmicas de:
+- HP (Vida)
+- XP (Experiência)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Os dados são carregados diretamente do backend.
 
-## Get a fresh project
+### 🎲 Sistema de Raridade
 
-When you're ready, run:
+Ao criar uma tarefa, o usuário seleciona uma raridade para o card.
 
-```bash
-npm run reset-project
-```
+Com base nessa escolha, o frontend calcula automaticamente os valores de:
+- experiência recebida
+- dano causado ao jogador
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### ✅ Feedback Visual
 
-## Learn more
+- Cards concluídos mudam para verde
+- Botões são habilitados/desabilitados conforme o estado da tarefa
 
-To learn more about developing your project with Expo, look at the following resources:
+### 📝 Gerenciamento de Hábitos
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Sistema de criação de missões com:
+- título
+- dificuldade
+- raridade
+- controle de conclusão
