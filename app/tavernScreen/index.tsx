@@ -104,7 +104,7 @@ export default function Index() {
         </TouchableOpacity>
         <View className='w-[80%]'>
           <Text className="text-lg mb-1 text-black">
-          {name}
+          {player?.name}
           </Text>
           <Text className='text-center text-[20px] font-bold'>Level {player?.level}</Text>
         </View>
